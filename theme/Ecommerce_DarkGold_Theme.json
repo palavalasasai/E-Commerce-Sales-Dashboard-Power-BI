@@ -1,0 +1,61 @@
+{
+  "name": "Ecommerce Dark Gold Theme",
+  "dataColors": [
+    "#F4C430",
+    "#00D4A6",
+    "#0097A7",
+    "#1976D2",
+    "#FF7043",
+    "#8E24AA",
+    "#FFCA28"
+  ],
+  "background": "#002C2C",
+  "foreground": "#F4C430",
+  "tableAccent": "#F4C430",
+
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "color": "#F4C430",
+            "fontSize": 14
+          }
+        ],
+        "background": [
+          {
+            "color": "#002C2C",
+            "transparency": 0
+          }
+        ],
+        "labels": [
+          {
+            "color": "#F4C430",
+            "fontSize": 11
+          }
+        ]
+      }
+    }
+  },
+
+  "textClasses": {
+    "title": {
+      "color": "#F4C430",
+      "fontSize": 20
+    },
+    "header": {
+      "color": "#F4C430",
+      "fontSize": 14
+    },
+    "callout": {
+      "color": "#F4C430",
+      "fontSize": 32
+    },
+    "label": {
+      "color": "#F4C430",
+      "fontSize": 11
+    }
+  }
+}
+
