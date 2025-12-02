@@ -1,76 +1,60 @@
-# E-Commerce-Sales-Dashboard-Power-BI
-This project showcases a fully interactive E-Commerce Sales Dashboard built using Power BI, designed to analyze sales, profit, and customer behavior across multiple dimensions.
-🚀 Project Overview
+📊 E-Commerce Sales Dashboard – End-to-End Power BI Project
 
-The goal was to create a visually appealing and insight-driven dashboard to help businesses track:
+This project focuses on building a fully interactive E-Commerce Sales Dashboard using Power BI to analyze sales performance, customer behavior, product trends, and regional insights. It helps businesses track KPIs, identify high-value customers, optimize operations, and make data-driven decisions with a clean, modern UI.
 
-Total Sales (Amount)
+📌 Project Overview
 
-Total Quantity Sold
+The dashboard provides a 360° analytical view of:
 
-Total Profit
+💰 Total Revenue (Amount)
 
-Top-Performing Categories & Sub-Categories
+📦 Total Quantity Sold
 
-State-wise & City-wise Sales
+📈 Total Profit
 
-Customer Contribution
+🛒 Category & Sub-Category performance
 
-Profit Trends (Monthly / Quarterly)
+🌍 State & City level sales
 
-Payment Mode Performance
+👥 Top Customers
 
-A modern Dark-Teal + Gold UI theme was applied for a premium analytics experience.
+💳 Payment mode insights
 
-🛠 Tools & Technologies Used
-Tool / Tech	Purpose
-Power BI Desktop	Dashboard creation & DAX modeling
-Power Query	Data transformation & cleaning
-DAX	Calculated columns & measures
-Custom JSON Theme	Dark-Gold UI styling
-CSV Dataset	5,000-row synthetic e-commerce dataset
-📈 Key Features
-✅ 1. KPI Summary Cards
+📆 Monthly Profit Trends
 
-Total Amount: 51M
+An elegant Dark Green + Gold theme is applied for premium, business-grade storytelling.
 
-Total Quantity: 15K
+🎯 Objectives
 
-Total Profit: 10M
+Track sales, profit, and order demand across key business metrics
 
-✅ 2. Donut Charts
+Understand buyer preferences based on location, payment mode, and product category
 
-Quantity by Category
+Identify best-performing states, cities, products, and customers
 
-Quantity by Payment Mode
+Visualize trends in monthly performance and profit contributions
 
-✅ 3. Bar Charts
+Provide interactive insights through slicers and dynamic charts
 
-Amount by Customer Name
+🧩 Dataset Description
 
-Amount by State
+File: Ecommerce_Sales_5000_Rows.csv
+Rows: 5,000
+Columns: 10+
 
-Profit by Sub-Category
-
-Profit by Month
-
-✅ 4. Interactive Filters
-
-State
-
-City
-
-✅ 5. Map Visualization
-
-Bubble map for sales distribution by location
-
-📂 Project Files
-File	Description
-Ecommerce_Sales_5000_Rows.csv	Dataset used in the dashboard
-Ecommerce_DarkGold_Theme.json	Custom theme file
-Ecommerce_Sales_Dashboard.pbix	Power BI dashboard file
-README.md	Project documentation
-🧠 DAX Calculations Used
+Column	Description	Type
+OrderID	Unique order identifier	Categorical
+OrderDate	Date of purchase	Date
+CustomerName	Customer name	Categorical
+City	Customer city	Categorical
+State	Customer state	Categorical
+Category	Product category	Categorical
+Sub-Category	Product sub-category	Categorical
+PaymentMode	UPI, Credit Card, COD, etc.	Categorical
+Quantity	Units ordered	Numeric
+Amount	Sales amount	Numeric
+Profit	Profit earned	Numeric
+🔧 Feature Engineering (DAX)
 Month Name
 MonthName = FORMAT([OrderDate], "MMMM")
 
@@ -80,22 +64,121 @@ MonthNumber = FORMAT([OrderDate], "MM")
 Year
 Year = YEAR([OrderDate])
 
-Total Profit
-Total Profit = SUM(Ecommerce_Sales[Profit])
-
 Total Amount
 Total Amount = SUM(Ecommerce_Sales[Amount])
 
-📊 Dashboard Preview (AI Mockup)
+Total Profit
+Total Profit = SUM(Ecommerce_Sales[Profit])
 
-⭐ Learning Outcomes
+📈 Dashboard Visuals
+🟩 KPI Cards
 
-Designing clean, business-focused dashboards
+Total Amount
 
-Applying custom Power BI themes
+Total Quantity
 
-Creating KPIs & DAX measures
+Total Profit
 
-Data modeling best practices
+🥧 Donut Charts
+
+Quantity by Category
+
+Quantity by Payment Mode
+
+📊 Bar Charts
+
+Sales by Customer
+
+Sales by State
+
+Profit by Sub-Category
+
+Monthly Profit Trend
+
+🌍 Map Visualization
+
+State-level Sales Distribution
+
+Location-based insights
+
+🎛 Filters (Slicers)
+
+State
+
+City
+
+🛠 Tools & Technologies Used
+Power BI
+
+Power Query (Data cleaning + Preparation)
+
+DAX (Feature creation)
+
+Interactive Visualizations
+
+Custom JSON Theme
+
+KPI Cards, Donut Charts, Bar Charts, Maps
+
+Supporting Tools
+
+Excel / CSV for raw data
+
+Figma (optional for UI planning)
+
+📂 Repository Structure
+ecommerce-powerbi-dashboard/
+│
+├── data/
+│   └── Ecommerce_Sales_5000_Rows.csv
+│
+├── powerbi/
+│   └── Ecommerce_Dashboard.pbix
+│
+├── theme/
+│   └── Ecommerce_DarkGold_Theme.json
+│
+├── visuals/
+│   └── dashboard_preview.png
+│
+├── README.md
+└── LICENSE
+
+💡 Insights Summary
+
+Clothing, Electronics, and Furniture generate the highest demand
+
+UPI and Credit Card dominate payment preferences
+
+Maharashtra & Madhya Pradesh drive major revenue
+
+January, March, and June show higher profit contribution
+
+Top customers significantly impact total revenue
+
+Sub-categories like Sarees, Accessories, and Mobiles show strong profitability
+
+🚀 Future Enhancements
+
+Add forecasting using Power BI’s analytics pane
+
+Add RFM customer segmentation
+
+Connect to a real-time SQL database
+
+Build an automated refresh pipeline
+
+Deploy dashboard to Power BI Service
+
+👨‍💻 Author
+
+Palavalasa Sai
+📧 palavalasasai42@gmail.com
+
+💼 Data Analytics Enthusiast | Python | SQL | Power BI | Visualization
+
+📜 License
+
+This project is open-source and available under the MIT License.
 
 Visual storytelling through analytics
