@@ -180,5 +180,3 @@ Palavalasa Sai
 📜 License
 
 This project is open-source and available under the MIT License.
-
-Visual storytelling through analytics
